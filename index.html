@@ -5,8 +5,59 @@
     <title>Ka-Konata's Profile</title>
     <meta name="description" content="Some informations about me">
     <meta name="author" content="Ka-Konata">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            width: 500px;
+            margin: 75px auto 0 auto;
+        }
+
+        .center {
+            float: left;
+            width: 250px;
+            margin: 0;
+        }
+
+        #discord-user > span {
+            display: block;
+            width: 250px;
+            padding: 10px 0px;
+            text-align: center;
+        }
+
+        #informations > h1 {
+            font-size: 23px;
+        }
+
+        @media screen and (max-width: 700px) {
+
+        }
+    </style>
   </head>
   <body>
-    [add some content]
+    <div class="main">
+        <div id="discord-user" class="center">
+            <img src="#" alt="Ka's profile picture" style="width: 250px;">
+            <span>Ka#0001</span>
+        </div>
+        <div id="informations" class="center">
+            <h1>About me</h1>
+            <div>
+                <p><strong>From:</strong> Brazil</p>
+                <p><strong>Age:</strong> 17y</p>
+                <p><strong>Desc:</strong> Web developer and future gamedev</p>
+            </div>
+        </div>
+        <div style="clear: left;"></div>
+        <div id="bottons">
+            <a href="#">Portifolio</a>
+            <a href="#">GitHub</a>
+            <a href="#">Youtube</a>
+        </div>
+    </div>
   </body>
 </html>
