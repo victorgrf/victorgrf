@@ -6,29 +6,12 @@
     <meta name="description" content="Some informations about me">
     <meta name="author" content="Ka-Konata">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://ka-konata.github.io/Ka-Konata/style.css">
+    <link rel="stylesheet" href="https://ka-konata.github.io/Ka-Konata/static/styles/style.css"> <!-- https://ka-konata.github.io/Ka-Konata/ -->
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: 300;
-        }
-
-        body {
-            background: rgb(51, 51, 51) url(source/background.gif) no-repeat fixed;
-        }
 
         .main {
             width: 600px;
             margin: 75px auto 0 auto;
-        }
-
-        .center {
-            float: left;
-            width: 250px;
-            margin: 0;
         }
 
         #user {
@@ -53,14 +36,14 @@
             display: inline-block;
             width: 20px;
             height: 20px;
-            background: url(source/copy.png);
+            background: url(static/source/copy.png);
             border: none;
         }
 
         #discord-user > span > input:focus {
             border: none;
             outline: none;
-            background: url(source/copied.png);
+            background: url(static/source/copied.png);
         }
 
         #user-name {
@@ -72,18 +55,6 @@
         #informations {
             width: 200px;
             margin: 50px 0 0 50px;
-        }
-
-        h1 {
-            font-size: 23px;
-        }
-
-        p {
-            margin-bottom: 3px;
-        }
-
-        a {
-            margin-right: 5px;
         }
 
         @media screen and (max-width: 700px) {
@@ -105,11 +76,11 @@
         }
     </style>
   </head>
-  <body> 
+  <body style="background: rgb(51, 51, 51) url(static/source/background.gif) no-repeat fixed;"> 
     <div class="main">
         <div id="user">
             <div id="discord-user" class="center">
-                <img src="source/pfp.gif" alt="Ka's profile picture" style="width: 240px;">
+                <img src="static/source/pfp.gif" alt="Ka's profile picture" style="width: 240px;">
                 <span id="user-name">
                     Ka#0001
                     <input type="button" value="" onclick="copyText()"></input>
