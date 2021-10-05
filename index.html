@@ -16,6 +16,8 @@
         }
 
         body {
+            width: 100vw;
+            height: 100vh;
             background: rgb(51, 51, 51) url(source/background.gif) no-repeat fixed;
         }
 
@@ -32,7 +34,7 @@
 
         #user {
             padding: 50px;
-            background-color: rgba(0, 0, 0, 0.329);
+            background-color: rgba(0, 0, 0, 0.397);
             border-radius: 15px;
         }
 
@@ -73,12 +75,34 @@
             margin: 50px 0 0 50px;
         }
 
-        #informations > h1 {
+        h1 {
             font-size: 23px;
         }
 
-        @media screen and (max-width: 700px) {
+        p {
+            margin-bottom: 3px;
+        }
 
+        a {
+            margin-right: 5px;
+        }
+
+        @media screen and (max-width: 700px) {
+            .main {
+                width: 80%;
+            }
+
+            #discord-user, #user-name, #informations {
+                display: block;
+                float: none;
+                margin: 0 auto;
+            }
+        }
+
+        @media screen and (max-width: 430px) {
+            .main {
+                width: 350px;
+            }
         }
     </style>
   </head>
@@ -95,23 +119,22 @@
             <div id="informations" class="center">
                 <h1 style="margin-bottom: 8px;">About me</h1>
                 <div>
-                    <p><strong>From:</strong> Brazil</p>
-                    <p><strong>Age:</strong> 17y</p>
-                    <p><strong>Desc:</strong> Web developer and future gamedev</p>
+                    <p><strong>from:</strong> Brazil</p>
+                    <p><strong>age:</strong> 17y</p>
+                    <p><strong>desc:</strong> Web developer and future gamedev</p>
                 </div>
             </div>
             <div style="clear: left;"></div>
         </div>
         <div id="bottons">
-            <a href="#">Portifolio</a>
-            <a href="#">GitHub</a>
-            <a href="#">Youtube</a>
+            <a href="/portifolio">Portifólio</a>
+            <a href="/friends">Friends</a>
+            <a href="https://github.com/Ka-Konata">GitHub</a>
+            <a href="https://www.youtube.com/channel/UCw1Fgt52i6AYGVhHBHge_xg">Youtube</a>
         </div>
     </div>
   </body>
   <script>
-    let copi = document.createElement("span")
-    $("#main").append(copi)
     function copyText() {
         navigator.clipboard.writeText("Ka#0001")
     }
