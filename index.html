@@ -1,18 +1,26 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ka-Konata's Profile</title>
     <meta name="description" content="Some informations about me">
     <meta name="author" content="Ka-Konata">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <style>
         * {
             margin: 0;
             padding: 0;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 300;
+        }
+
+        body {
+            background: rgb(51, 51, 51) url(source/background.gif) no-repeat fixed;
         }
 
         .main {
-            width: 500px;
+            width: 600px;
             margin: 75px auto 0 auto;
         }
 
@@ -22,11 +30,47 @@
             margin: 0;
         }
 
+        #user {
+            padding: 50px;
+            background-color: rgba(0, 0, 0, 0.329);
+            border-radius: 15px;
+        }
+
+        #discord-user > img {
+            border-radius: 180px;
+            border: 5px solid white;
+        }
+
         #discord-user > span {
             display: block;
             width: 250px;
             padding: 10px 0px;
             text-align: center;
+        }
+
+        #discord-user > span > input {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: url(source/copy.png);
+            border: none;
+        }
+
+        #discord-user > span > input:focus {
+            border: none;
+            outline: none;
+            background: url(source/copied.png);
+        }
+
+        #user-name {
+            margin-top: 5px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+        }
+
+        #informations {
+            width: 200px;
+            margin: 50px 0 0 50px;
         }
 
         #informations > h1 {
@@ -38,21 +82,26 @@
         }
     </style>
   </head>
-  <body>
+  <body> 
     <div class="main">
-        <div id="discord-user" class="center">
-            <img src="#" alt="Ka's profile picture" style="width: 250px;">
-            <span>Ka#0001</span>
-        </div>
-        <div id="informations" class="center">
-            <h1>About me</h1>
-            <div>
-                <p><strong>From:</strong> Brazil</p>
-                <p><strong>Age:</strong> 17y</p>
-                <p><strong>Desc:</strong> Web developer and future gamedev</p>
+        <div id="user">
+            <div id="discord-user" class="center">
+                <img src="source/pfp.gif" alt="Ka's profile picture" style="width: 240px;">
+                <span id="user-name">
+                    Ka#0001
+                    <input type="button" value="" onclick="copyText()"></input>
+                </span>
             </div>
+            <div id="informations" class="center">
+                <h1 style="margin-bottom: 8px;">About me</h1>
+                <div>
+                    <p><strong>From:</strong> Brazil</p>
+                    <p><strong>Age:</strong> 17y</p>
+                    <p><strong>Desc:</strong> Web developer and future gamedev</p>
+                </div>
+            </div>
+            <div style="clear: left;"></div>
         </div>
-        <div style="clear: left;"></div>
         <div id="bottons">
             <a href="#">Portifolio</a>
             <a href="#">GitHub</a>
@@ -60,4 +109,11 @@
         </div>
     </div>
   </body>
+  <script>
+    let copi = document.createElement("span")
+    $("#main").append(copi)
+    function copyText() {
+        navigator.clipboard.writeText("Ka#0001")
+    }
+  </script>
 </html>
