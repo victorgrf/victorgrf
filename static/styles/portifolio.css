@@ -1,0 +1,320 @@
+/* -------------------------------------------------------------------- */
+/* Página no geral */
+* {
+    padding: 0;
+    margin: 0;
+
+    /* Main colors of the page */
+    --main-normal-blue: rgba(26, 43, 59, 0.878);
+    --main-lite-blue: rgb(145, 145, 194);
+    --main-dark-blue: rgb(26 43 59);
+    --main-black: rgba(0, 0, 0, 0.336);
+    --main-white: rgba(0, 0, 0, 0.089);
+    --main-gray: rgb(204, 204, 204);
+}
+
+body, #main {
+    position: relative;
+}
+
+a {
+    color: var(--main-lite-blue);
+}
+
+.text-white {
+    color: white;
+}
+
+/* -------------------------------------------------------------------- */
+/* Configurando o Header */
+#header {
+    height: 815px;
+    background: var(--main-gray) url(../source/bg_portifolio.jpg) fixed;
+    background-size: cover;
+}
+
+#person {
+    position: relative;
+    top: 170px;
+
+    width: 400px;
+    margin: 0 auto;
+    padding: 75px 0;
+    text-align: center;
+    background-color: var(--main-black);
+}
+
+#person > img {
+    width: 175px;
+    border-radius: 180px;
+    margin: 0 auto;
+}
+
+#person > h1 {
+    font-size: 2em;
+}
+
+#person > p {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* -------------------------------------------------------------------- */
+/* Configurando o Conteúdo */
+.box-content {
+    float: left;
+    padding: 25px 15px 15px 15px;
+    margin-bottom: 40px;
+}
+
+#box-1 {
+    width: calc(30% - 30px);
+}
+
+#social-midias > div {
+    text-align: center;
+}
+
+#social-midias > div > a {
+    color: white;
+    margin-right: 10px;
+}
+
+#social-midias > div > a > img {
+    width: 30px;
+}
+
+.left-box {
+    border: 1px solid var(--main-gray);
+    border-radius: 15px;
+    background-color: var(--main-white);
+    margin: 15px 0;
+    padding: 15px;
+}
+
+.box-title-2 {
+    color: var(--main-normal-blue);
+    margin-bottom: 10px;
+}
+
+.box-title-3 {
+    color: var(--main-dark-blue);
+    margin-bottom: 6px;
+}
+
+.box-text {
+    color: var(--main-black);
+    margin-bottom: 4px;
+}
+
+.box-separate {
+    height: 10px;
+}
+
+#box-2 {
+    background: var(--main-normal-blue);
+    width: calc(70% - 30px);
+}
+
+.occult-zone {
+    display: none;
+}
+
+.alternative-title-2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 13px;
+}
+
+.content-section-div-dark {
+    background-color: var(--main-dark-blue);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.content-section > div > p {
+    margin-bottom: 5px;
+}
+
+.content-text {
+    display: inline-block;
+    width: calc(65% - 60px);
+    padding: 30px;
+}
+
+.content-info-title {
+    color: var(--main-gray);
+}
+
+.first-info-tile {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.box-line-under {
+    margin-bottom: 50px;
+}
+
+.content-img {
+    display: inline-block;
+    width: 200px;
+    height: 200px; 
+}
+
+.content-img > img {
+    border-top-right-radius: 15px;
+    width: 200px;
+}
+
+.content-img-device-version {
+    display: none;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.projects-imgs {
+    width: 35%;
+}
+
+.projects-imgs > img{
+    width: 100%;
+}
+
+.project-img-big {
+    display: none;
+}
+
+.project-text {
+    width: calc(65% - 30px);
+    padding: 0 15px;
+}
+
+.content-blok {
+    margin-bottom: 30px;
+}
+
+.last {
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+.space {
+    height: 8px;
+}
+
+/* Content mobile version */
+@media screen and (max-width: 1000px) {
+    .content-img, .content-img > img {
+        display: none;
+    }
+
+    .content-img-device-version {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+        background-color: white !important;
+    }
+
+    .content-img-device-version > img {
+        width: 100%;
+    }
+
+    .content-text {
+        width: calc(100% - 60px);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #box-1, #box-2 {
+        width: calc(100% - 30px);
+    }
+
+    .content-img-device-version {
+        display: none;
+    }
+
+    .content-img, .content-img > img {
+        display: inline-block;
+    }
+
+    .content-text {
+        width: calc(70% - 60px);
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .content-img, .content-img > img {
+        display: none;
+    }
+
+    .content-img-device-version {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+        background-color: white !important;
+    }
+
+    .content-img-device-version > img {
+        width: 100%;
+    }
+
+    .content-text {
+        width: calc(100% - 60px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .project-img-small {
+        display: none;
+    }
+
+    .project-img-big {
+        display: block;
+    }
+
+    .projects-imgs {
+        width: 100%;
+    }
+
+    .project-text {
+        width: calc(100% - 30px);
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #person {
+        width: 100%;
+    }
+}
+
+/* -------------------------------------------------------------------- */
+/* Configurando o Rodapé */
+#rodape {
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    height: 40px;
+    width: 100%;
+
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--main-dark-blue);
+}
+
+#rodape > p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+#rodape > a {
+    display: inline;
+}
+/* -------------------------------------------------------------------- */
