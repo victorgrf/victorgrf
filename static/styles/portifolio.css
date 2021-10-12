@@ -63,12 +63,12 @@ a {
 /* Configurando o Conteúdo */
 .box-content {
     float: left;
-    padding: 25px 15px 15px 15px;
+    padding: 25px 20px 20px 20px;
     margin-bottom: 40px;
 }
 
 #box-1 {
-    width: calc(30% - 30px);
+    width: calc(30% - 40px);
 }
 
 #social-midias > div {
@@ -113,7 +113,7 @@ a {
 
 #box-2 {
     background: var(--main-normal-blue);
-    width: calc(70% - 30px);
+    width: calc(70% - 40px);
 }
 
 .occult-zone {
@@ -232,7 +232,7 @@ a {
 
 @media screen and (max-width: 900px) {
     #box-1, #box-2 {
-        width: calc(100% - 30px);
+        width: calc(100% - 40px);
     }
 
     .content-img-device-version {
