@@ -2,7 +2,6 @@
 
 - 💬 Languages: python, js, php and a bit of c#
 - 📫 Other knowledges: html, css
-- 🔭 I’m currently working on: [BetterDiscord-Massive-Erase](https://github.com/Ka-Konata/Massive-Erase)
 - 🌱 I’m currently studing about web development
 
 <!--
