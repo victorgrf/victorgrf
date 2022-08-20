@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sacramento&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+div#cabecalho {
+    background: red;
+    width: 100%;
+    height: 0px;
+
+    padding: 0px;
+}
+
+div#container {
+    height: 100vh;
+}
+
+.arrow-change-area {
+    z-index: 4;
+    display: block;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+.arrow-change-area div {
+    width: 50px;
+}
+
+.arrow-change-area img {
+    width: 50px;
+}
+
+.arrow-change-area-down {
+    position: fixed;
+    bottom: 0px;
+}
+
+.arrow-change-area-up {
+    display: none;
+    position: fixed;
+    top: 0px;
+}
+
+.arrow-change-area:hover {
+    background: rgba(0, 0, 0, 0.075);
+    cursor: pointer;
+}
+
+.arrow-change-area:active {
+    background: rgba(0, 0, 0, 0.288);
+}
+
+.area-content {
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    transition: bottom 1s;
+}
+
+.area-content-actual {
+    bottom: 0% !important;
+}
+
+.centralizer {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centralizer-v {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+.font-handwriting {
+    font-family: 'Sacramento', Times, serif;
+}
+
+/* ---------------------------------- CSS DA AREA 1 ---------------------------------- */
+#area-1 {
+    z-index: 1 hsl(0, 0%, 8%);
+    background: #505050 url("../sources/bg.jpg");
+
+    bottom: -100%;
+}
+
+#her-content {
+    background: none;
+    width: calc(70% - 100px); /*calc(70% - 100px)*/
+    height: 50%; /*50%*/
+    margin-top: 10%;
+    padding: 0 100px;
+}
+
+#her-pfp {
+    display: inline-block;
+    width: 30%;
+    max-width: 200px;
+}
+
+#her-pfp img {
+    width: 100%;
+
+    border-radius: 10px;
+}
+
+#her-text {
+    display: inline-block;
+    width: calc(70% - 35px);
+    padding: 15px;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#her-text h1 {
+    font-size: 50px;
+}
+
+#her-text p {
+    font-size: 35px;
+
+}
+
+.strong {
+    font-weight: bold;
+}
+
+/* ---------------------------------- CSS DA AREA 2 ---------------------------------- */
+.ocult {
+    display: none;
+}
+
+#area-2 {
+    z-index: 2;
+    background: url("../sources/bg-draws.png") rgb(20, 20, 20) no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    bottom: -100%;
+}
+
+#bg-draws {
+    width: 100%;
+}
+
+div.draw {
+    display: inline-block;
+    width: 30%;
+    height: 40%;
+    background-color: none;
+    border: 2px solid rgba(255, 255, 255, 0.004);
+
+    position: absolute;
+}
+
+#draw-1 {
+    top: 0;
+    left: 0;
+}
+
+#draw-2 {
+    top: 0;
+    right: 0;
+}
+
+#draw-3 {
+    bottom: 0;
+    left: 0;
+}
+
+#draw-4 {
+    bottom: 0;
+    right: 0;
+}
+
+.draw img {
+    z-index: 2;
+    width: 100%;
+} 
+
+div#things-content {
+    width: 400px;
+    height: 200px;
+    padding: 60px 120px;
+
+    background-color: #2424245e;
+}
+
+div#things-title {
+    margin-bottom: 20px;
+}
+
+div#things-title > h2 {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+div#things-texts {
+    padding: 25px;  
+    margin-bottom: 10px;
+    background: white;
+}
+
+div#things-texts > p {
+    text-align: justify;
+}
+
+div#things-change {
+    display: inline-block;
+}
+
+div#things-inputs {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+div#things-inputs > input {
+    width: 20px;
+    height: 20px;
+    border: 0 none;
+
+    border-radius: 6px;
+}
+
+div#things-inputs > input:hover {
+    background-color: rgb(196, 195, 195);
+    cursor: pointer;
+}
+ 
+.things-line {
+    display: inline-block;
+    background: white;
+    width: 169px;
+    height: 5px;
+}
+
+/* ---------------------------------- CSS DA AREA 3 ---------------------------------- */
+#area-3 {
+    z-index: 3;
+    background: #ea6661;
+
+    bottom: -100%;
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+@keyframes change-content-to-area-1 {
+    
+}
