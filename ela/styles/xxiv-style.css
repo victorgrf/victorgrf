@@ -106,14 +106,13 @@ div#container {
 
 #her-pfp img {
     width: 100%;
-
     border-radius: 10px;
 }
 
 #her-text {
     display: inline-block;
     width: calc(70% - 75px);
-    padding: 15px 15px 2em 60px;
+    padding: 15px 15px 60px 60px;
 
     position: absolute;
     right: 0;
@@ -121,11 +120,11 @@ div#container {
 }
 
 #her-text h1 {
-    font-size: 3em;
+    font-size: 4.7em;
 }
 
 #her-text p {
-    font-size: 2.5em;
+    font-size: 3.9em;
 
 }
 
