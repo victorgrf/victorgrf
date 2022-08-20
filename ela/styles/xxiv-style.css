@@ -113,8 +113,8 @@ div#container {
 
 #her-text {
     display: inline-block;
-    width: calc(70% - 35px);
-    padding: 15px;
+    width: calc(70% - 75px);
+    padding: 15px 15px 2em 60px;
 
     position: absolute;
     right: 0;
@@ -122,11 +122,11 @@ div#container {
 }
 
 #her-text h1 {
-    font-size: 50px;
+    font-size: 3em;
 }
 
 #her-text p {
-    font-size: 35px;
+    font-size: 2.5em;
 
 }
 
