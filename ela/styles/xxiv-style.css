@@ -102,7 +102,6 @@ div#container {
 #her-pfp {
     display: inline-block;
     width: 30%;
-    max-width: 200px;
 }
 
 #her-pfp img {
