@@ -209,6 +209,7 @@ div#things-texts {
     padding: 25px;  
     margin-bottom: 10px;
     background: white;
+    height: 80px;
 }
 
 div#things-texts > p {

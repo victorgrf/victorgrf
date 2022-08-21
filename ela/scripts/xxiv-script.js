@@ -1,6 +1,6 @@
 var actualArea = 1
 var actualText = 1
-var totalTexts = 3
+var totalTexts = 102
 
 $(document).ready(function(){
     const arrowUp   = $("#arrow-change-area-up")
