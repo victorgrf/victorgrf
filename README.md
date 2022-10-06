@@ -1,5 +1,3 @@
-  ![mio-chan](https://tenor.com/view/mio-akiyama-mio-akiyama-kon-guitar-gif-5889445.gif)
-
 - 💬 Languages: python, js, php and a bit of c#
 - 📫 Other knowledges: html, css
 - 🌱 I’m currently studing about web development
