@@ -6,41 +6,69 @@
     <meta name="description" content="Some informations about me">
     <meta name="author" content="Ka-Konata">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://ka-konata.site/static/styles/style.css">
-    <link rel="stylesheet" href="https://ka-konata.site/static/styles/index.css">
-    <link rel="shortcut icon" href="https://ka-konata.site/static/source/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="static/styles/style.css">
+    <link rel="stylesheet" href="static/styles/index.css">
+    <link rel="shortcut icon" href="static/source/favicon.ico" type="image/x-icon">
   </head>
   <body> 
-    <div class="main">
-        <div id="user">
-            <div id="discord-user" class="center">
-                <img src="static/source/pfp5.gif" alt="Ka's profile picture" style="width: 240px;">
-                <span id="user-name">
-                    Ka#0001
-                    <input type="button" value="" onclick="copyText()"></input>
-                </span>
+    <header>
+      <div>
+        <nav>
+          <input type="button" value="GitHub" onclick="redirect('https://github.com/Ka-Konata', '_blank')">
+          <input type="button" value="Twitter" onclick="redirect('/https://twitter.com/the_konacchi', '_blank')">
+          <input type="button" value="Instagram" onclick="redirect('https://www.instagram.com/http_knata/', '_blank')">
+          <input type="button" value="Eles <3" class="last" onclick="redirect('/friends')">
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="upset">
+
+      </div>
+      <div class="content">
+        <div id="profile">
+          <div id="pfp">
+            <img src="/static/source/pfp6.gif" alt="">
+          </div>
+
+          <div id="user-name" onclick="copyText()">
+            Ka#3560
+          </div>
+
+          <div id="info">
+            <div id="info1" class="ifo">
+              <h2>Musicas Favoritas: </h2>
+              <p>Fly me to the moon - Manual do FODa-S3 - Lana - Yer Killin' me - Cabelos de Arco-Íris</p>
             </div>
-            <div id="informations" class="center">
-                <h1 style="margin-bottom: 8px;">About me</h1>
-                <div>
-                    <p><strong>from:</strong> Brazil</p>
-                    <p><strong>age:</strong> 17y</p>
-                    <p><strong>desc:</strong> Web developer and future gamedev</p>
-                    <p><strong>animes:</strong> Kyoukai no Kanata, K-on!, Your Name</p>
-                </div>
+            <div id="info2" class="ifo">
+              <h2>Sobre Mim:</h2>
+              <p>18 anos, cursando Anásile e Desenvolvimento de Sistemas (segundo semestre)</p>
             </div>
-            <div style="clear: left;"></div>
+            <div id="info3" class="ifo">
+              <h2>Outras Coisas:</h2>
+              <p>Anime: Kyoukai no Kanata. Gênero Musical: Indie Rock. INFJ. Amo comer sua mãe rsrs</p>
+            </div>
+            <div style="float: clear;"></div>
+          </div>
         </div>
-        <div id="bottons">
-            <a href="/friends" rel="last" target="_self">Friends</a>
-            <a href="https://github.com/Ka-Konata" rel="external" target="_blank">GitHub</a>
-            <a href="https://www.youtube.com/channel/UCw1Fgt52i6AYGVhHBHge_xg" rel="external" target="_blank">Youtube</a>
-        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div>
+        <p>made by me - @http_knata</p>
+      </div>
+    </footer>
     </div>
   </body>
   <script>
     function copyText() {
-        navigator.clipboard.writeText("Ka#0001")
+        navigator.clipboard.writeText("Ka#3560")
+    }
+
+    function redirect(href, target = "_self") {
+    window.open(`${href}`, target)
     }
   </script>
 </html>
