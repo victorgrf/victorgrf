@@ -51,7 +51,7 @@ main > div.content {
     position: absolute;
     bottom: 15px;
     width: calc(100% - 30px);
-    height: 40%;
+    height: inherit;
     padding: 15px;
     background: rgba(34, 34, 34, 0.980);
     text-align: center;
