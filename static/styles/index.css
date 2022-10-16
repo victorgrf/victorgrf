@@ -1,6 +1,6 @@
 body {
     background-size: cover;
-    background-image: url(../source/bg_profile.gif);
+    background-image: url(../source/bg-22.gif);
 }
 
 header > div {
@@ -29,7 +29,7 @@ header nav input[type=button] {
 
 header nav input[type=button].last {
     position: absolute;
-    right: 0;
+    right: 15;
 
     margin-right: 15px;
 }
