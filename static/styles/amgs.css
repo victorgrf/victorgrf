@@ -24,14 +24,25 @@ div {
 }
 
 h1 {
+    color: rgba(245, 222, 179, 0);
     text-align: center;
     font-size: 35px;
 }
 
 h2 {
-    color: rgb(33 25 55);
+    color: rgb(221 220 229);
     text-decoration: underline;
     margin-bottom: 5px;
+}
+
+h2 > span {
+    opacity: 0;
+    transition: 0.3s;
+    color: rgb(221 220 229);
+}
+
+.friend-block:hover span {
+    opacity: 1;
 }
 
 p {
@@ -42,11 +53,51 @@ a {
     color: black;
 }
 
-#back a {
-    margin: 10px;
-    background-color: aliceblue;
-    padding: 5px 20px;
+#back {
+    background: none; 
+    margin: 0;
+    padding: 3px;
 }
+
+.button {
+    background-color: rgba(26, 29, 53, 0.534);
+    border: none;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px 10px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00AB';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -5px;
+    transition: 0.5s;
+  }
+
+  .button:hover {
+    background-color: rgb(26, 30, 53);
+  }
+  
+  .button:hover span {
+    padding-left: 15px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    left: -2px;
+  }
 
 .last {
     margin-right: 0 !important;
@@ -62,6 +113,7 @@ a {
 }
 
 .friend-block {
+    border: 4px solid rgb(34 40 86 / 75%);
     margin-bottom: 30px;
     padding: 15px;
 }
@@ -92,6 +144,7 @@ a {
     width: calc(100% - 248px);
     margin-top: 15px;
 }
+
 
 @media screen and (max-width: 650px) {
     .img {

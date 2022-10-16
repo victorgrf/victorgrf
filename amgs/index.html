@@ -3,19 +3,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ka-Konata's Friends</title>
+    <title>Amigos do Ka-Konata's</title>
     <meta name="description" content="Some informations about me">
     <meta name="author" content="Ka-Konata">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://ka-konata.site/static/styles/style.css">
-    <link rel="stylesheet" href="../static/styles/friends.css">
-    <link rel="shortcut icon" href="https://ka-konata.site/static/source/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../static/styles/style.css">
+    <link rel="stylesheet" href="../static/styles/amgs.css">
+    <link rel="shortcut icon" href="..static/source/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div id="header">
-        <h1>Amo Eles</h1>
+        <h1>Os Mais Fofos</h1>
     </div>
-    <div id="back"><a href="/"><span>voltar</span></a></div>
+    <div id="back"><button class="button" onclick="redirect('/')"><span>Voltar </span></button></a></div>
     
     <div class="content">
         <div class="friend-block">
@@ -24,7 +24,7 @@
                     <img src="../static/source/friends_lanna.gif" alt="">
                 </div>
                 <div class="text">
-                    <h2>Lanna</h2>
+                    <h2>Lanna<span>, a mais linda</span></h2>
                     <p>Ela é simplesmente a garota mais perfeita que existe. Mesmo parecendo meio fria as vezes ela na realidade é extremamente fofa e queridinha, a ponto de td mundo querer um pedacinho desse nenê. <i>Minha (só minha) diplominha ♥</i></p>
                 </div>
             </div>
@@ -37,7 +37,7 @@
                     <img src="../static/source/friends_snay.gif" alt="">
                 </div>
                 <div class="text">
-                    <h2>Nanay</h2>
+                    <h2>Snay<span>, o mais gostoso</span></h2>
                     <p>Tem uma voz de deixar qualquer uma molhadina (inclusive eu), é extremamente horny e boiola cmg, continua assim pq eu gosto rsrs.</p>
                 </div>
             </div>
@@ -47,24 +47,11 @@
         <div class="friend-block">
             <div class="sub">
                 <div class="img">
-                    <img src="../static/source/friends_gib's.jpg" alt="">
+                    <img src="../static/source/friends_gui.gif" alt="">
                 </div>
                 <div class="text">
-                    <h2>Gui</h2>
+                    <h2>Gui<span>, o mais tesudo</span></h2>
                     <p>Dark, trevoso e emo das trevas, gostoso quando deixa cabelo grande e quem eu considero meu melhor amiginho.&lt;3 jogaria até lol por ele.</p>
-                </div>
-            </div>
-            <div style="clear: both; background: none; height: 1px; padding: 0;"></div>
-        </div>
-            
-        <div class="friend-block">
-            <div class="sub">
-                <div class="img">
-                    <img src="../static/source/friends_lin.jpg" alt="">
-                </div>
-                <div class="text">
-                    <h2>Lin</h2>
-                    <p>Aquela voz... nossa aquela voz. Cara larga essa mina ai e namora cmg pf!!! dps me chama na dm pra gente marcar aquele gf q a gente tava combinando.</p>
                 </div>
             </div>
             <div style="clear: both; background: none; height: 1px; padding: 0;"></div>
@@ -73,10 +60,10 @@
         <div class="friend-block">
             <div class="sub">
                 <div class="img">
-                    <img src="../static/source/friends_hinata.jpg" alt="">
+                    <img src="../static/source/friends_hina.gif" alt="">
                 </div>
                 <div class="text">
-                    <h2>Hina</h2>
+                    <h2>Hina<span>, a mais fofa</span></h2>
                     <p>A mod lá do sv do johan q fica fznd quack quack o tempo todo e conseguiu ser a pessoa q me mantinha naquela staff por meses. <i>Vai dormir Hinata namoral!!</i></p>
                 </div>
             </div>
@@ -89,7 +76,7 @@
                     <img src="../static/source/friends_kreituu.gif" alt="">
                 </div>
                 <div class="text">
-                    <h2>Kreituu</h2>
+                    <h2>Kreituu<span>, o mais falso</span></h2>
                     <p>O moço estranho que parecia q tinha treta com td mundo e sempre fica me atualizando das merdas q acontecem enquanto eu tô sumido. <i>&lt;3 oi te amo</i></p>
                 </div>
             </div>
@@ -98,4 +85,9 @@
     </div>
 </div>
 </body>
+<script>
+  function redirect(href, target = "_self") {
+  window.open(`${href}`, target)
+  }
+</script>
 </html>

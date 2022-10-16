@@ -19,12 +19,12 @@ header nav input[type=button] {
     border-radius: 10px;
     background: white;
 
-    margin-right: 10px;
+    margin: 0 5px;
 
     color: black;
     
     cursor: pointer;
-    transition-duration: 0.4s;
+    transition-duration: 0.5s;
 }
 
 header nav input[type=button].last {
@@ -34,12 +34,18 @@ header nav input[type=button].last {
     margin-right: 15px;
 }
 
-header nav input[type=button]:hover {
-    background: rgba(253, 253, 253, 0.701);
+header nav input[type=button]:hover:not(header nav input[type=button].last){
+    padding: 0 20px;
+    margin: 0;
+}
+
+header nav input[type=button].last:hover {
+    padding: 0 20px;
+    margin: 0 10px;
 }
 
 header nav input[type=button]:active {
-    background: rgba(255, 255, 255, 0.218);
+    background: rgba(255, 255, 255, 0.685);
 }
 
 main > div.upset {
@@ -187,6 +193,10 @@ footer > div p {
         float: left;
         border-radius: 0;
         border-right: 1px solid gray;
+    }
+    
+    header nav input[type=button]:hover {
+        background: rgba(255, 255, 255, 0.767);
     }
 
     header nav input[type=button].last {
