@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="tip" markdown="1">
+        <h1 id="documenta-o-haru-rework-">Documentação - Haru (Rework)</h1>
+<h2 id="descri-o">Descrição</h2>
+<p>Este é um Rework da Haru (Haru v3). Um simples bot para o discord, com algumas funcionalidades básicas.<br/></p>
+<ul>
+<li>Funciona apenas em servidores, bloqueia o uso em dms.</li>
+<li>Modo de Desenvolvimento: funciona apenas nos servidores pré-definidos</li>
+</ul>
+<blockquote>
+<p>Atualmente na versão alpha 3.0.0.5</p>
+</blockquote>
+<hr>
+<h2 id="clonando-o-reposit-rio">Clonando o Repositório</h2>
+<p>Algumas coisas precisam ser feitas para instalar o projeto e colocá-lo para funcionar</p>
+<ol>
+<li>Clone o repositório</li>
+<li>Abra um terminal e navegue até a pasta principal do projeto</li>
+<li>Instale as depêndencias usando <code>pip install -r requirements.txt</code></li>
+<li>Vá no <a href="https://discord.com/developers/applications">developer portal</a> do discord, crie uma aplicação e copie o token</li>
+<li>Na pasta principal do projeto, crie um arquivo .env e salve o token do bot como uma variável de ambiente</li>
+<li>Inicie o programa usando <code>python main.py</code></li>
+<li>No terminal, insira o ID do seu servidor de testes</li>
+<li>No terminal, Insira o ID do seu usuário no discord</li>
+</ol>
+<p>Caso queira desativar o Modo de Desenvolvimento, apenas entre no seu servidor de testes e execute o comando <code>h!oc_devmode off</code></p>
+<h2 id="n-veis-de-permiss-o">Níveis de permissão</h2>
+<ul>
+<li><p>Developer</p>
+<blockquote>
+<p>Lista fechada</p>
+</blockquote>
+</li>
+<li><p>Manager</p>
+<blockquote>
+<p>Lista fechada</p>
+</blockquote>
+</li>
+<li><p>Owner</p>
+<blockquote>
+<p>Posse do servidor</p>
+</blockquote>
+</li>
+<li><p>Administrator</p>
+<blockquote>
+<p>Permissão de administrador</p>
+</blockquote>
+</li>
+<li><p>Moderator</p>
+<blockquote>
+<p>Permissão para banir membros</p>
+</blockquote>
+</li>
+<li><p>Member</p>
+<blockquote>
+<p>Nenhum Requisito</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="idiomas">Idiomas</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">name</th>
+<th style="text-align:left">code</th>
+<th style="text-align:left">satage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Português</td>
+<td style="text-align:left">pt-br</td>
+<td style="text-align:left">✔️</td>
+</tr>
+<tr>
+<td style="text-align:left">Inglês</td>
+<td style="text-align:left">en</td>
+<td style="text-align:left">❌</td>
+</tr>
+</tbody>
+</table>
+<h2 id="m-dulos">Módulos</h2>
+<h3 id="dev-module">Dev Module</h3>
+<blockquote>
+<p>Modulo oculto</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">name</th>
+<th style="text-align:left">permission</th>
+<th style="text-align:left">explanation</th>
+<th style="text-align:left">stage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">oc_status</td>
+<td style="text-align:left">manager</td>
+<td style="text-align:left">envia um hello world, e os status do bot</td>
+<td style="text-align:left">✔️</td>
+</tr>
+<tr>
+<td style="text-align:left">oc_quit</td>
+<td style="text-align:left">developer</td>
+<td style="text-align:left">força a parar o bot</td>
+<td style="text-align:left">✔️</td>
+</tr>
+<tr>
+<td style="text-align:left">oc_setsv</td>
+<td style="text-align:left">manager</td>
+<td style="text-align:left">libera o uso do bot no servidor atual</td>
+<td style="text-align:left">✔️</td>
+</tr>
+<tr>
+<td style="text-align:left">oc_unsetsv</td>
+<td style="text-align:left">manager</td>
+<td style="text-align:left">bloqueia o uso do bot no servidor atual</td>
+<td style="text-align:left">✔️</td>
+</tr>
+<tr>
+<td style="text-align:left">oc_listsv</td>
+<td style="text-align:left">manager</td>
+<td style="text-align:left">lista todos os servidores liberados</td>
+<td style="text-align:left">✔️</td>
+</tr>
+<tr>
+<td style="text-align:left">oc_pmtmanager</td>
+<td style="text-align:left">developer</td>
+<td style="text-align:left">adiciona um usuário na lista de managers</td>
+<td style="text-align:left">✔️</td>
+</tr>
+<tr>
+<td style="text-align:left">oc_dmtmanager</td>
+<td style="text-align:left">developer</td>
+<td style="text-align:left">remove um usuário da lista de managers</td>
+<td style="text-align:left">✔️</td>
+</tr>
+<tr>
+<td style="text-align:left">oc_listmanager</td>
+<td style="text-align:left">manager</td>
+<td style="text-align:left">lista todos os usuários com permissão de manager</td>
+<td style="text-align:left">✔️</td>
+</tr>
+<tr>
+<td style="text-align:left">oc_pmtdeveloper</td>
+<td style="text-align:left">developer</td>
+<td style="text-align:left">adiciona um usuário na lista de developers</td>
+<td style="text-align:left">✔️</td>
+</tr>
+<tr>
+<td style="text-align:left">oc_dmtdeveloper</td>
+<td style="text-align:left">developer</td>
+<td style="text-align:left">remove um usuário da lista de developers</td>
+<td style="text-align:left">✔️</td>
+</tr>
+<tr>
+<td style="text-align:left">oc_listdeveloper</td>
+<td style="text-align:left">manager</td>
+<td style="text-align:left">lista todos os usuários com permissão de developer</td>
+<td style="text-align:left">✔️</td>
+</tr>
+<tr>
+<td style="text-align:left">oc_devmode</td>
+<td style="text-align:left">developer</td>
+<td style="text-align:left">ativa ou desativa o modo de desenvolvimento</td>
+<td style="text-align:left">✔️</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bot-module">Bot Module</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">name</th>
+<th style="text-align:left">permission</th>
+<th style="text-align:left">explanation</th>
+<th style="text-align:center">stage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">help</td>
+<td style="text-align:left">member</td>
+<td style="text-align:left">A list of all commands or an explanation of a specific module/command.</td>
+<td style="text-align:center">✔️</td>
+</tr>
+<tr>
+<td style="text-align:left">haru</td>
+<td style="text-align:left">member</td>
+<td style="text-align:left">Basic information about Haru</td>
+<td style="text-align:center">✔️</td>
+</tr>
+<tr>
+<td style="text-align:left">invite</td>
+<td style="text-align:left">member</td>
+<td style="text-align:left">Send the bot invite link</td>
+<td style="text-align:center">✔️</td>
+</tr>
+<tr>
+<td style="text-align:left">site</td>
+<td style="text-align:left">member</td>
+<td style="text-align:left">Send the bot&#39;s official website link</td>
+<td style="text-align:center">✔️</td>
+</tr>
+<tr>
+<td style="text-align:left">server</td>
+<td style="text-align:left">member</td>
+<td style="text-align:left">Send the bot&#39;s official server invite link</td>
+<td style="text-align:center">✔️</td>
+</tr>
+<tr>
+<td style="text-align:left">github</td>
+<td style="text-align:left">member</td>
+<td style="text-align:left">Send Haru&#39;s repository link on github</td>
+<td style="text-align:center">✔️</td>
+</tr>
+<tr>
+<td style="text-align:left">dev</td>
+<td style="text-align:left">member</td>
+<td style="text-align:left">Information about the bot development team</td>
+<td style="text-align:center">✔️</td>
+</tr>
+<tr>
+<td style="text-align:left">ping</td>
+<td style="text-align:left">member</td>
+<td style="text-align:left">Used to know if haru is alive</td>
+<td style="text-align:center">✔️</td>
+</tr>
+</tbody>
+</table>
+<h3 id="configuration-module">Configuration Module</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">name</th>
+<th style="text-align:left">permission</th>
+<th style="text-align:left">explanation</th>
+<th style="text-align:center">stage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">prefix</td>
+<td style="text-align:left">admin</td>
+<td style="text-align:left">Allows you to change the guild prefix</td>
+<td style="text-align:center">✔️</td>
+</tr>
+<tr>
+<td style="text-align:left">language</td>
+<td style="text-align:left">admin</td>
+<td style="text-align:left">Allows you to change Haru&#39;s language</td>
+<td style="text-align:center">✔️</td>
+</tr>
+<tr>
+<td style="text-align:left">lockcommand</td>
+<td style="text-align:left">admin</td>
+<td style="text-align:left">bloqueia o uso de um comando</td>
+<td style="text-align:center">❌</td>
+</tr>
+<tr>
+<td style="text-align:left">unlockcommand</td>
+<td style="text-align:left">admin</td>
+<td style="text-align:left">desbloqueia o uso de um comando</td>
+<td style="text-align:center">❌</td>
+</tr>
+<tr>
+<td style="text-align:left">lockmodule</td>
+<td style="text-align:left">admin</td>
+<td style="text-align:left">bloqueia o uso de um módulo</td>
+<td style="text-align:center">❌</td>
+</tr>
+<tr>
+<td style="text-align:left">unlockmodule</td>
+<td style="text-align:left">admin</td>
+<td style="text-align:left">desbloqueia o uso de um módulo</td>
+<td style="text-align:center">❌</td>
+</tr>
+<tr>
+<td style="text-align:left">lockedcommands</td>
+<td style="text-align:left">admin</td>
+<td style="text-align:left">lista de comandos e/ou módulos bloqueados</td>
+<td style="text-align:center">❌</td>
+</tr>
+<tr>
+<td style="text-align:left">settings</td>
+<td style="text-align:left">mod</td>
+<td style="text-align:left">lista as configurações do bot no servidor</td>
+<td style="text-align:center">❌</td>
+</tr>
+</tbody>
+</table>
+<h3 id="utility-module">Utility Module</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">name</th>
+<th style="text-align:left">permission</th>
+<th style="text-align:left">explanation</th>
+<th style="text-align:center">stage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">avatar</td>
+<td style="text-align:left">member</td>
+<td style="text-align:left">envia o avatar de um usuário</td>
+<td style="text-align:center">❌</td>
+</tr>
+<tr>
+<td style="text-align:left">banner</td>
+<td style="text-align:left">member</td>
+<td style="text-align:left">envia o banner de um usuário</td>
+<td style="text-align:center">❌</td>
+</tr>
+<tr>
+<td style="text-align:left">servericon</td>
+<td style="text-align:left">member</td>
+<td style="text-align:left">envia o ícone do servidor</td>
+<td style="text-align:center">❌</td>
+</tr>
+<tr>
+<td style="text-align:left">permissions</td>
+<td style="text-align:left">member</td>
+<td style="text-align:left">informa as permissões de um usuário</td>
+<td style="text-align:center">❌</td>
+</tr>
+<tr>
+<td style="text-align:left">userinfo</td>
+<td style="text-align:left">member</td>
+<td style="text-align:left">informações sobre um usuário</td>
+<td style="text-align:center">❌</td>
+</tr>
+<tr>
+<td style="text-align:left">channelinfo</td>
+<td style="text-align:left">member</td>
+<td style="text-align:left">informações sobre um canal</td>
+<td style="text-align:center">❌</td>
+</tr>
+<tr>
+<td style="text-align:left">roleinfo</td>
+<td style="text-align:left">member</td>
+<td style="text-align:left">informações sobre um cargo</td>
+<td style="text-align:center">❌</td>
+</tr>
+<tr>
+<td style="text-align:left">serverinfo</td>
+<td style="text-align:left">member</td>
+<td style="text-align:left">informações sobre um servidor</td>
+<td style="text-align:center">❌</td>
+</tr>
+<tr>
+<td style="text-align:left">currency</td>
+<td style="text-align:left">member</td>
+<td style="text-align:left">converte um valor de para outra cotação</td>
+<td style="text-align:center">❌</td>
+</tr>
+<tr>
+<td style="text-align:left">random</td>
+<td style="text-align:left">member</td>
+<td style="text-align:left">gera um número aleatório</td>
+<td style="text-align:center">❌</td>
+</tr>
+<tr>
+<td style="text-align:left">anime</td>
+<td style="text-align:left">member</td>
+<td style="text-align:left">informações sobre um anime no my anime list</td>
+<td style="text-align:center">❌</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fun-module">Fun Module</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">name</th>
+<th style="text-align:left">permission</th>
+<th style="text-align:left">explanation</th>
+<th style="text-align:center">stage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">morse</td>
+<td style="text-align:left">member</td>
+<td style="text-align:left">traduz um texto ou frase para código morse</td>
+<td style="text-align:center">❌</td>
+</tr>
+<tr>
+<td style="text-align:left">flipmsg</td>
+<td style="text-align:left">member</td>
+<td style="text-align:left">inverte a ordem das letras de um texto ou frase</td>
+<td style="text-align:center">❌</td>
+</tr>
+<tr>
+<td style="text-align:left">choose</td>
+<td style="text-align:left">member</td>
+<td style="text-align:left">escolhe algo de uma lista de coisas</td>
+<td style="text-align:center">❌</td>
+</tr>
+<tr>
+<td style="text-align:left">coinflip</td>
+<td style="text-align:left">member</td>
+<td style="text-align:left">gira uma moeda (cara ou coroa)</td>
+<td style="text-align:center">❌</td>
+</tr>
+<tr>
+<td style="text-align:left">jankenpon</td>
+<td style="text-align:left">member</td>
+<td style="text-align:left">joga jokenpô com o usuário</td>
+<td style="text-align:center">❌</td>
+</tr>
+<tr>
+<td style="text-align:left">dice</td>
+<td style="text-align:left">member</td>
+<td style="text-align:left">joga um dado de 6 lados</td>
+<td style="text-align:center">❌</td>
+</tr>
+<tr>
+<td style="text-align:left">ship</td>
+<td style="text-align:left">member</td>
+<td style="text-align:left">shipa dois usuários, em até 100%</td>
+<td style="text-align:center">❌</td>
+</tr>
+<tr>
+<td style="text-align:left">guess</td>
+<td style="text-align:left">member</td>
+<td style="text-align:left">o usuário tenta adivinhar um número de 1 a 10</td>
+<td style="text-align:center">❌</td>
+</tr>
+<tr>
+<td style="text-align:left">mugistrong</td>
+<td style="text-align:left">member</td>
+<td style="text-align:left">envia um gif da Mugi-Strong</td>
+<td style="text-align:center">❌</td>
+</tr>
+<tr>
+<td style="text-align:left">say</td>
+<td style="text-align:left">member</td>
+<td style="text-align:left">faça a haru dizer alguma coisa</td>
+<td style="text-align:center">❌</td>
+</tr>
+<tr>
+<td style="text-align:left">dm</td>
+<td style="text-align:left">member</td>
+<td style="text-align:left">faça a haru enviar uma dm para alguém</td>
+<td style="text-align:center">❌</td>
+</tr>
+</tbody>
+</table>
+<h3 id="interaction-module">Interaction Module</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">name</th>
+<th style="text-align:left">permission</th>
+<th style="text-align:left">explanation</th>
+<th style="text-align:center">stage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">kiss</td>
+<td style="text-align:left">member</td>
+<td style="text-align:left">beija algum outro usuário</td>
+<td style="text-align:center">❌</td>
+</tr>
+<tr>
+<td style="text-align:left">bite</td>
+<td style="text-align:left">member</td>
+<td style="text-align:left">morder algum outro usuário</td>
+<td style="text-align:center">❌</td>
+</tr>
+<tr>
+<td style="text-align:left">lick</td>
+<td style="text-align:left">member</td>
+<td style="text-align:left">lambe algum outro usuário</td>
+<td style="text-align:center">❌</td>
+</tr>
+<tr>
+<td style="text-align:left">slap</td>
+<td style="text-align:left">member</td>
+<td style="text-align:left">da um tapa em algum outro usuário</td>
+<td style="text-align:center">❌</td>
+</tr>
+<tr>
+<td style="text-align:left">hug</td>
+<td style="text-align:left">member</td>
+<td style="text-align:left">abraça algum outro usuário</td>
+<td style="text-align:center">❌</td>
+</tr>
+<tr>
+<td style="text-align:left">shoot</td>
+<td style="text-align:left">member</td>
+<td style="text-align:left">ataca algum outro usuário</td>
+<td style="text-align:center">❌</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+</body>
+</html>
