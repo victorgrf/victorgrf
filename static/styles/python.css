@@ -1,0 +1,62 @@
+.language-python {
+    margin-top: 20px;
+    background: #1a2124;
+    padding: 15px;
+
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+.tab {
+    font-family: 'Courier New', Courier, monospace;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.mini {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+    color: #b06bae;
+}
+
+.white, pre {
+    font-family: 'Courier New', Courier, monospace;
+    color: white; /*#d05024;*/
+}
+
+
+.pink {
+    font-family: 'Courier New', Courier, monospace;
+    color: #df6edb; /*#d05024;*/
+}
+
+.green {
+    font-family: 'Courier New', Courier, monospace;
+    color: #adff2f; 
+}
+
+.orange {
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffa500;
+}
+
+.yellow {
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffff85;
+}
+
+.output {
+    font-family: 'Courier New', Courier, monospace;
+    background: #1a2124;
+    padding: 15px;
+
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+.output-title {
+    display: inline-block;
+    margin: 15px 0px 5px 0px;
+    color: black;
+    font-size: 20px;
+}

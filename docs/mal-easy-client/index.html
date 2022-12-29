@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../../static/styles/style.css">
+    <link rel="stylesheet" href="../../static/styles/mal.css">
+    <link rel="stylesheet" href="../../static/styles/python.css">
+    <link rel="shortcut icon" href="../../static/source/malpy.ico" type="image/x-icon">
+    <script src="../../static/scripts/mal.js"></script>
+</head>
+<body>
+    <header>
+        <a href="#">
+            <span class="pre-title"><img src="../../static/source/malpy-icon.png" alt="malpy-icon" class="vertical-center"></span>
+            <span class="pre-title"><p class="vertical-center">MALPY - DOCUMENTATION</p></span>
+            <span id="search-bar">
+                <input type="text" name="search-bar" id="" placeholder="Search something">
+                <img src="../../static/source/lupa.png" alt="" id="search-btn">
+            </span>
+        </a>
+    </header>
+
+
+    <section>
+        <div id="index">
+            <div class="block">
+                <div class="content-index title">Documentation</div>
+                <div id="getting-started">
+                    <div><a href="#t-description" class="content-index">Description</a></div>
+                    <div><a href="#t-getting-started" class="content-index">Getting Started</a></div>
+                </div>
+
+                <div class="content-index title">Reference</div>
+                <ul>
+                    <li>
+                        <div class="content-index list-semi-title" onclick="displayList('suspense-1')">get</div>
+                        <ul class="list-suspense" id="suspense-1">
+                            <li><div><a href="#get/anime" class="content-index list-value">anime</a></div></li>
+                            <li><div><a href="#get/manga" class="content-index list-value">manga</a></div></li>
+                            <li><div><a href="#get/user" class="content-index list-value">user</a></div></li>
+                            <li><div><a href="#get/username" class="content-index list-value">username</a></div></li>
+                            <li><div><a href="#get/anime-list" class="content-index list-value">anime_list</a></div></li>
+                            <li><div><a href="#get/manga-list" class="content-index list-value">manga_list</a></div></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="content-index list-semi-title" onclick="displayList('suspense-2')">search</div>
+                        <ul class="list-suspense" id="suspense-2">
+                            <li><div><a href="#search/anime" class="content-index list-value">anime</a></div></li>
+                            <li><div><a href="#search/manga" class="content-index list-value">manga</a></div></li>
+                            <li><div><a href="#search/user" class="content-index list-value">user</a></div></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="content-index list-semi-title" onclick="displayList('suspense-3')">classes</div>
+                        <ul class="list-suspense" id="suspense-3">
+                            <li><div><a href="#t-classes-anime" class="content-index list-value">Anime</a></div></li>
+                            <li><div><a href="#t-classes-manga" class="content-index list-value">Manga</a></div></li>
+                            <li><div><a href="#t-classes-user" class="content-index list-value">User</a></div></li>
+                            <li><div><a href="#t-classes-fields" class="content-index list-value">Fields</a></div></li>
+                            <li><div><a href="#t-classes-malobj" class="content-index list-value">MalObj</a></div></li>
+                            <li><div><a href="#t-classes-connection" class="content-index list-value">Conection</a></div></li>
+                            <li><div><a href="#t-classes-mallist" class="content-index list-value">MalList</a></div></li>
+                            <li><div><a href="#t-classes-liststatus" class="content-index list-value">ListStatus</a></div></li>
+                            <li><div><a href="#t-classes-statistics" class="content-index list-value">Statistics</a></div></li>
+                            <li><div><a href="#t-classes-animestatisc" class="content-index list-value">AnimesStatic</a></div></li>
+                            <li><div><a href="#t-classes-mangastatic" class="content-index list-value">MangasStatic</a></div></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="content-index list-semi-title" onclick="displayList('suspense-4')">errors</div>
+                        <ul class="list-suspense" id="suspense-4">
+                            <li>
+                                <div><a href="#t-errors-unknown-status-given" class="content-index list-value">UnknownStatusGiven</a></div>
+                                <div><a href="#t-errors-unknown-sort-given" class="content-index list-value">UnknownSortGiven</a></div>
+                                <div><a href="#t-errors-unknown-list-type" class="content-index list-value">UnknownListType</a></div>
+                                <div><a href="#t-errors-unauthorized" class="content-index list-value">Unauthorized</a></div>
+                                <div><a href="#t-errors-at-least-one-method" class="content-index list-value">AtLeastOneMethod</a></div>
+                                <div><a href="#t-errors-limit-exeeded" class="content-index list-value">LimitExeeded</a></div>
+                            </li>
+                        </ul>          
+                    </div>
+                </ul>
+            </div>
+        <div id="fake-box"></div>
+        <div id="content">
+            <div class="block">
+                <h1 class="content-content">MALPY - Documentation</h1>
+                <div class="sub-block">
+                    <h2 class="content-content">Description</h2>
+                    <p class="content-content">MALPY is a python library made to help people to use both MyAnimeList API and Jikan API easily and together. Why? There are some endpoints that are available on one of them, but unavailable on the other, which forces you to use both API's if you want to access all these endpoints</p>
+                    <div class="content-content" id="icon-div">
+                        <p id="logo"><img src="../../static/source/malpy-icon.png" alt="" style="width: 100px;" class="center"></p>
+                        <p>
+                            <a href="https://www.python.org/downloads/release/python-361/" ,="" target="_blank">
+                                <img src="https://img.shields.io/badge/python-3.6.1+-blue" alt="Support Server">
+                            </a>
+                            <a href="https://konata.site/docs/mal-easy-client" ,="" target="_blank">
+                                <img src="https://img.shields.io/website?down_color=red&down_message=offline&label=documentation&logo=python&logoColor=white&up_color=green%20light&up_message=online&url=http%3A%2F%2Fkonata.site%2Fdocs%2Fmal-easy-client" alt="Support Server">
+                            </a>
+                            <a href="https://github.com/Ka-Konata/MAL-easy-client/releases">
+                                <img alt="GitHub release (latest by date including pre-releases)" src="https://img.shields.io/github/v/release/Ka-Konata/MAL-easy-client?color=green%20light&label=last%20release">
+                            </a>
+                            <a href="https://ka-konata.github.io">
+                                <img alt="Website" src="https://img.shields.io/website?down_color=red&down_message=offline&label=author%20website&up_color=green%20light&up_message=online&url=https%3A%2F%2Fka-konata.github.io">
+                            </a>
+                        </p>
+                        <p>
+                            <a href="">
+                                <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Ka-Konata/MAL-easy-client?style=social">
+                            </a>
+                        </p>
+                    </div>
+                    <p class="content-content">If you're new with malpy, you shold start reading this: <a class="link" href="http://127.0.0.1:5500/docs/mal-easy-client/index.html#t-getting-started">getting started</a></p>
+                </div>
+
+                <div class="sub-block" id="t-getting-started">
+                    <h2 class="content-content">Getting Started</h2>
+                    <p class="content-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, sapiente magni veritatis dolorem dignissimos, asperiores iure nemo corrupti rerum maiores iste, rem voluptatibus repudiandae odit eligendi. Eaque sint minima voluptatibus?</p>
+                    <div class="language-python">
+                        <span class="pink">import</span> myanimelist, asyncio <br> <br>
+                        mal = myanimelist.<span class="green">Connect</span>(<span class="yellow">"YOUR CLIENT ID"</span>) <br>
+                        <span class="pink">def</span> <span class="green">main</span>(): <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;search = <span class="pink">await</span> mal.search.<span class="green">anime</span>(<span class="yellow">"Death Note"</span>, <span class="orange">limit</span>=<span class="yellow">5</span>) <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">for</span> anime <span class="pink">in</span> search: <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">print</span>(<span class="pink">f</span><span class="yellow">"ID: <span class="pink">{<span class="white">anime.id</span>}</span> - Title: <span class="pink">{<span class="white">anime.title</span>}</span>"</span>) <br> <br>
+                        asyncio.<span class="green">run<span class="white">(<span class="green">main<span class="white">()</span></span>)</span></span>
+
+                    </div>
+                    <span class="output-title">Output:</span>
+                    <div class="output">
+                        ID: 2994 - Title: Death Note: Rewrite <br>
+                        ID: 1535 - Title: Death Note <br>
+                        ID: 35994 - Title: Satsuriku no Tenshi <br>
+                        ID: 34497 - Title: Death March kara Hajimaru <br>
+                        ID: 3323 - Title: Kite Liberator <br>
+                    </div>
+                </div>
+
+                <div class="sub-block">
+                    <h1 id="t1" style="color: black;">TITULO 1</h1>
+                    <h2 class="content-content">Reference</h2>
+                    <div class="sub-block">
+                        <h3 class="content-content">Module: get</h3>
+                        <p class="content-content">Contain commands to get especific types of datas</p>
+
+                        <div style="height: 1px;" id="get/anime"></div>
+                        <h4 class="content-content language-python"><span class="mini">async def</span> get.<span class="green">anime</span>(<span class="orange">id</span>, <span class="orange">fields</span> = Fields.anime.<span class="green">basic</span>())</h4>
+                        <div class="sub-title">Function Get Anime</div>
+                        <p class="content-content">Get an anime by id</p> 
+                        <p class="content-content">Uses: MyAnimeList API</p>
+
+                        <h4 class="content-content language-python" id="get/manga"><span class="mini">async def</span> get.<span class="green">manga</span>(<span class="orange">id</span>, <span class="orange">fields</span> = Fields.manga.<span class="green">basic</span>())</h4>
+                        <p class="content-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, sapiente magni veritatis dolorem dignissimos, asperiores iure nemo corrupti rerum maiores iste, rem voluptatibus repudiandae odit eligendi. Eaque sint minima voluptatibus?</p>
+
+                        <h4 class="content-content language-python" id="get/user"><span class="mini">async def</span> get.<span class="green">user</span>(<span class="orange">username</span>, <span class="orange">full</span> = <span class="yellow">None</span>)</h4>
+                        <p class="content-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, sapiente magni veritatis dolorem dignissimos, asperiores iure nemo corrupti rerum maiores iste, rem voluptatibus repudiandae odit eligendi. Eaque sint minima voluptatibus?</p>
+
+                        <h4 class="content-content language-python" id="get/username"><span class="mini">async def</span> get.<span class="green">username</span>(<span class="orange">id</span>)</h4>
+                        <p class="content-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, sapiente magni veritatis dolorem dignissimos, asperiores iure nemo corrupti rerum maiores iste, rem voluptatibus repudiandae odit eligendi. Eaque sint minima voluptatibus?</p>
+
+                        <h4 class="content-content language-python" id="get/anime-list"><span class="mini">async def</span> get.<span class="green">anime_list</span>(<span class="orange">username</span>, <span class="orange">status</span> = <span class="yellow">None</span>, <span class="orange">sort</span>=<span class="yellow">'anime_title'</span>, <span class="orange">fields</span> = Fields.anime.<span class="green">basic</span>(), <span class="orange">limit</span> = <span class="yellow">20</span>)</h4>
+                        <p class="content-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, sapiente magni veritatis dolorem dignissimos, asperiores iure nemo corrupti rerum maiores iste, rem voluptatibus repudiandae odit eligendi. Eaque sint minima voluptatibus?</p>
+
+                        <h4 class="content-content language-python" id="get/manga-list"><span class="mini">async def</span> get.<span class="green">manga_list</span>(<span class="orange">username</span>, <span class="orange">status</span> = <span class="yellow">None</span>, <span class="orange">sort</span>=<span class="yellow">'manga_title'</span>, <span class="orange">fields</span> = Fields.manga.<span class="green">basic</span>(), <span class="orange">limit</span> = <span class="yellow">20</span>)</h4>
+                        <p class="content-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, sapiente magni veritatis dolorem dignissimos, asperiores iure nemo corrupti rerum maiores iste, rem voluptatibus repudiandae odit eligendi. Eaque sint minima voluptatibus?</p>
+                    </div>
+
+                    <h3 class="content-content">serach</h3>
+                    <p class="content-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, sapiente magni veritatis dolorem dignissimos, asperiores iure nemo corrupti rerum maiores iste, rem voluptatibus repudiandae odit eligendi. Eaque sint minima voluptatibus?</p>
+                    <h4 class="content-content" id="search/anime">anime</h4>
+                    <p class="content-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, sapiente magni veritatis dolorem dignissimos, asperiores iure nemo corrupti rerum maiores iste, rem voluptatibus repudiandae odit eligendi. Eaque sint minima voluptatibus?</p>
+                    <h4 class="content-content" id="search/manga">manga</h4>
+                    <p class="content-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, sapiente magni veritatis dolorem dignissimos, asperiores iure nemo corrupti rerum maiores iste, rem voluptatibus repudiandae odit eligendi. Eaque sint minima voluptatibus?</p>
+                    <h4 class="content-content" id="search/user">user</h4>
+                    <p class="content-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, sapiente magni veritatis dolorem dignissimos, asperiores iure nemo corrupti rerum maiores iste, rem voluptatibus repudiandae odit eligendi. Eaque sint minima voluptatibus?</p>
+                </div>
+            </div>
+        
+            <footer>
+                footer
+            </footer>
+        </div>
+        <div id="to-top" onclick="topFunction()"><p class="center">TOP</p></div>
+    </section>
+
+
+</body>
+</html>
