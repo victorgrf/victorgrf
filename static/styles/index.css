@@ -222,12 +222,12 @@ footer > div p {
     }
 
     main {
-        height: calc(100% + 200px);
+        height: calc(100% + 0px);
     }
 
     main div.content {
         width: calc(100%);
-        height: calc(100% + 200px);
+        height: calc(100% + 0px);
         padding: 0 0 0 0;
         margin: 0;
         position: absolute;
