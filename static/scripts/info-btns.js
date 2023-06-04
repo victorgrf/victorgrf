@@ -1,5 +1,5 @@
 var actualPage = 0;
-var totalPages = 5;
+var totalPages = 4;
 
 function movePage(reverse) {
     if(reverse == true) {
@@ -18,7 +18,12 @@ function movePage(reverse) {
 }
 
 function changePageDetails() {
-    console.log(actualPage);
+    let pages = $(".ifo-div");
+    console.log(pages)
+    for(let i = 0; i <= totalPages; i++) {
+        pages[i].classList.add('occult');
+    }
+    pages[actualPage].classList.remove('occult')
 }
 
 function showMenu() {
