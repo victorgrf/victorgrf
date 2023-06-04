@@ -13,13 +13,26 @@
   </head>
   <body> 
     <header>
-      <div>
+      <div id="big">
         <nav>
           <input type="button" value="GitHub" onclick="redirect('https://github.com/Ka-Konata', '_blank')">
           <input type="button" value="Twitter" onclick="redirect('https://twitter.com/the_konacchi', '_blank')">
           <input type="button" value="Instagram" onclick="redirect('https://www.instagram.com/http_knata/', '_blank')">
           <input type="button" value="Amgs" class="last" onclick="redirect('/amgs')">
           <input type="button" value="Haru" class="last" onclick="redirect('/amgs')">
+        </nav>
+      </div>
+      
+      <div id="small">
+        <div>
+          <img src="static/source/bar.png" alt="" onclick="showMenu()">
+        </div>
+        <nav id="menu" class="occulted">
+          <input type="button" value="GitHub" class="first" onclick="redirect('https://github.com/Ka-Konata', '_blank')">
+          <input type="button" value="Twitter" onclick="redirect('https://twitter.com/the_konacchi', '_blank')">
+          <input type="button" value="Instagram" onclick="redirect('https://www.instagram.com/http_knata/', '_blank')">
+          <input type="button" value="Amgs" onclick="redirect('/amgs')">
+          <input type="button" value="Haru" onclick="redirect('/amgs')">
         </nav>
       </div>
     </header>
