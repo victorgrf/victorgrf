@@ -2,13 +2,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ka-Konata's Profile</title>
+    <title>Stand by me お願い</title>
     <meta name="description" content="Eca lol.">
     <meta name="author" content="Ka-Konata">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="static/scripts/info-btns.js"></script>
     <link rel="stylesheet" href="static/styles/style.css">
     <link rel="stylesheet" href="static/styles/index.css">
-    <link rel="shortcut icon" href="static/source/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="static/source/favicon2.ico" type="image/x-icon">
   </head>
   <body> 
     <header>
@@ -17,7 +18,8 @@
           <input type="button" value="GitHub" onclick="redirect('https://github.com/Ka-Konata', '_blank')">
           <input type="button" value="Twitter" onclick="redirect('https://twitter.com/the_konacchi', '_blank')">
           <input type="button" value="Instagram" onclick="redirect('https://www.instagram.com/http_knata/', '_blank')">
-          <input type="button" value="Eles <3" class="last" onclick="redirect('/amgs')">
+          <input type="button" value="Amgs" class="last" onclick="redirect('/amgs')">
+          <input type="button" value="Haru" class="last" onclick="redirect('/amgs')">
         </nav>
       </div>
     </header>
@@ -26,30 +28,55 @@
       <div class="upset">
 
       </div>
-      <div class="content">
-        <div id="profile">
-          <div id="pfp">
-            <img src="/static/source/pfp9.gif" alt="">
-          </div>
+      <div class="centralizer">
+        <div class="content">
+          <div id="profile">
+            <div id="pfp">
+              <img src="/static/source/pfp12.gif" alt="">
+            </div>
+            <div id="user-name" onclick="copyText()">
+              Ka#0002
+            </div>
 
-          <div id="user-name" onclick="copyText()">
-            Ka#3560
-          </div>
+            <div id="before-info">
+              <div>
+                <input type="button" value="‹" class="info-btn" onclick="movePage(true)" style="float: left;">
+                <input type="button" value="›" class="info-btn" onclick="movePage(false)" style="float: right
+                ;">
+                <div id="info">
 
-          <div id="info">
-            <div id="info1" class="ifo">
-              <h2>Musicas Favoritas: </h2>
-              <p>Fly me to the moon - Manual do FODa-S3 - Lana - Yer Killin' me - Cabelos de Arco-Íris</p>
+                  <div id="info1">
+                    <div class="ifo"></div>
+                    <div class="ifo"></div>
+                  </div>
+
+                  <div id="info2" class="occult">
+                    <div class="ifo"></div>
+                    <div class="ifo"></div>
+                  </div>
+                  
+
+                  <div id="info3" class="occult">
+                    <div class="ifo"></div>
+                    <div class="ifo"></div>
+                  </div>
+                  
+
+                  <div id="info4" class="occult">
+                    <div class="ifo"></div>
+                    <div class="ifo"></div>
+                  </div>
+                  
+
+                  <div id="info5" class="occult">
+                    <div class="ifo"></div>
+                    <div class="ifo"></div>
+                  </div>
+                  
+
+                </div>
+              </div>
             </div>
-            <div id="info2" class="ifo">
-              <h2>Sobre Mim:</h2>
-              <p>18 anos, cursando Anásile e Desenvolvimento de Sistemas (segundo semestre)</p>
-            </div>
-            <div id="info3" class="ifo">
-              <h2>Outras Coisas:</h2>
-              <p>Anime: Kyoukai no Kanata. Main Zoe cansada. INFJ. Amo comer sua mãe rsrs</p>
-            </div>
-            <div style="float: clear;"></div>
           </div>
         </div>
       </div>

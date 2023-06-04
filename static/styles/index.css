@@ -7,40 +7,42 @@ header > div {
     z-index: 100;
     position: fixed;
     width: calc(100%);
-    height: 23px;
-    padding: 10px;
-    background: rgba(34, 34, 34, 0.904); /* rgba(107, 34, 156, 0.438) */
+    height: 30px;
+    padding: 0px;
+    background: rgba(34, 34, 34, 0); /* rgba(107, 34, 156, 0.438) */
 }
 
 header nav input[type=button] {
-    height: 23px;
-    padding: 0px 15px;
+    height: 30px;
+    padding: 0px 20px;
     border: 0;
-    border-radius: 10px;
-    background: white;
+    background: rgba(255, 255, 255, 0);
+    color: white;
 
-    margin: 0 5px;
-
-    color: black;
-    
+    position: inherit !important;
+    margin: 0 !important;
+    float: left;
+    border-radius: 0;
+    /*border-right: 1px solid gray;*/
+     
     cursor: pointer;
     transition-duration: 0.5s;
 }
 
 header nav input[type=button].last {
-    position: absolute;
-    right: 15;
-
-    margin-right: 15px;
+    float: right;
 }
 
 header nav input[type=button]:hover:not(header nav input[type=button].last){
-    padding: 0 20px;
+    /*padding: 0 20px;*/
+    background: rgba(255, 255, 255, 0.685);
     margin: 0;
 }
 
+
 header nav input[type=button].last:hover {
-    padding: 0 20px;
+    /*padding: 0 20px;*/
+    background: rgba(255, 255, 255, 0.685);
     margin: 0 10px;
 }
 
@@ -49,20 +51,37 @@ header nav input[type=button]:active {
 }
 
 main > div.upset {
-    height: 70%;
+    display: none;
+    height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.450);
+    background: rgba(22, 4, 56, 0.45);
 }
 
-main > div.content {
-    position: absolute;
+main div.content {
+    /*position: absolute;*/
     bottom: 15px;
-    width: calc(100% - 30px);
-    height: inherit;
-    padding: 15px;
-    background: rgba(34, 34, 34, 0.980);
+    width: 990px;
+    height: 310px;
+    padding: 0px 50px 50px 50px;
+
+    background: rgba(0, 1, 2, 76%);
     text-align: center;
-    border-top: 4px solid white;
+    /*border: 4px solid white;*/
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 15px;
+}
+
+main div.centralizer {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    /*background: #6C7A89;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 /* #profile {
@@ -71,7 +90,7 @@ main > div.content {
 
 #pfp img {
     width: 200px;
-    border: 4px solid white;
+    border: 4px solid rgba(255, 255, 255, 0);
     border-radius: 180px;
 
     margin-top: -100px;
@@ -83,48 +102,62 @@ main > div.content {
     font-weight: 500;
 }
 
-#info {
-    display: inline-block;
-    height: 60px;
+.info-btn {
+    position: relative;
+    /*float: left;*/
+    height: 144px;
+    width: 15%;
     padding: 10px;
-    margin: 10px auto;
+    margin: 20px auto 0 auto;
+    border: none;
+    /*position: relative;*/
 
-    background: rgb(51, 51, 51);
+    background: rgba(255, 255, 255, 0);
+    font-size: 50px;
+    font-weight: 100;
+     
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.info-btn:hover {
+    background: rgba(255, 255, 255, 0.466);
+}
+
+#before-info {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+#before-info > div {
+    display: inline-block;
+    height: 100px;
+    width: 690px;
+}
+
+#info {
+    position: relative;
+    float: left;
+    height: 120px;
+    width: calc(70% - 24px);
+    padding: 10px;
+    margin: 20px auto 0 auto;
+    border: 2px solid rgb(255, 255, 255);
+    /*border-radius: 15px;*/
+
+    background: rgba(255, 255, 255, 0);
+}
+
+.occult {
+    display: none;
 }
 
 .ifo {
-    display: inline-block;
-    width: 275px;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-
     float: left;
-}
-
-#info1 {
-    margin-right: 10px;
-    border-right: 2px solid gray;
-}
-
-#info2 {
-    border-right: 2px solid gray;
-    padding: 0 10px;
-}
-
-#info3 {
-    margin-left: 10px;
-}
-
-#info h2 {
-    font-size: 15px;
-    margin-bottom: 4px;
-}
-
-#info p {
-    font-size: 13px;
-    color: rgb(218, 218, 218);
-    margin: 0
+    width: 50%;
+    height: 100%;
+    background: white;
 }
 
 footer {    
@@ -134,94 +167,95 @@ footer {
 }
 
 footer > div {
-    height: 15px;
+    height: 20px;
     padding: 5px;
-    background: rgb(243, 243, 243);
+    background: rgba(34, 34, 34, 0);
 
     text-align: center;
 }
 
 footer > div p {
     font-size: 14px;
-    color: rgb(17, 17, 17);
+    color: white;
 }
 
-@media screen and (max-width: 920px) {
-    #info2 {
-        display: none;
+@media screen and (max-width: 1000px) {
+    main div.content {
+        width: 700px;
     }
 }
 
-@media screen and (max-width: 630px) {
-    main > div.content {
-        height: inherit;
+@media screen and (max-width: 800px) {
+    main div.content {
+        width: 500px;
+        height: 380px;
+        margin-top: 65px;
+    }
+
+    #before-info > div {
+        width: 500;
+    }
+
+    .info-btn {
+        margin-top: 20px;
+        padding-top: 0;
+        width: 250px;
+        height: 70px;
+        position: relative;
+        left: 0;
     }
 
     #info {
-        width: 275px;
-        height: inherit;
-    }
-     
-    .ifo {
+        margin: 0 0 0 0;
         float: left;
-        height: inherit;
-    }
-
-    #info1, #info2 {
-        display: inline-block;
-        border-right: none;
-        border-bottom: 2px solid gray;
-        padding: 0 0 10 0px;
-        margin-bottom: 10px;
-    }
-
-    #info3 {
-        margin: 0;
+        width: calc(100% - 24px);
     }
 }
 
-@media screen and (max-width: 413px) {
-    header div {
-        padding: 0;
-        text-align: left;
+@media screen and (max-width: 600px) {
+    header {
+        display: none;
     }
 
-    header nav input[type=button] {
-        position: inherit !important;
-        width: 25%;
-        margin: 0 !important;
-        float: left;
+    #pfp {
+        margin-top: 120px;
+    }
+
+    main {
+        height: calc(100% + 200px);
+    }
+
+    main div.content {
+        width: calc(100%);
+        height: calc(100% + 200px);
+        padding: 0 0 0 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
         border-radius: 0;
-        border-right: 1px solid gray;
-    }
-    
-    header nav input[type=button]:hover {
-        background: rgba(255, 255, 255, 0.767);
     }
 
-    header nav input[type=button].last {
-        border-right: none;
-    }
-
-    main > div.content {
-        padding: 10px 0;
+    #before-info > div {
         width: 100%;
     }
 
-    #pfp img {
-        width: 170px;
-    }
-
-    .ifo {
-        width: 100%; 
+    .info-btn {
+        width: 45%;
+        padding: 0 0 10px 0;
+        float: none !important;
+        display: inline-block;
     }
 
     #info {
-        width: calc(100% - 20px);
-        height: inherit;
+        display: inline-block;
+        margin: 0;
+        float: none;
+        width: 250px;
+        height: 288px;
     }
 
-    #info2 {
-        display: none;
+    /*#info1, #info2, #info3, #info4, #info5*/
+
+    .ifo {
     }
 }
