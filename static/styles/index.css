@@ -71,6 +71,7 @@ main div.content {
     margin-right: auto;
     margin-left: auto;
     border-radius: 15px;
+    position: relative;
 }
 
 main div.centralizer {
