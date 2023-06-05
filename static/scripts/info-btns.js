@@ -1,5 +1,5 @@
 var actualPage = 0;
-var totalPages = 4;
+var totalPages = 2;
 
 function movePage(reverse) {
     if(reverse == true) {
