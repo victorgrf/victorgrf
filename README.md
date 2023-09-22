@@ -1,6 +1,11 @@
-- 💬 Languages: python, js, php and a bit of c#
-- 📫 Other knowledges: html, css
-- 🌱 I’m currently studing about web development
+I'm a web developer student from Brazil. Currently studing to improve my knewledge and programming skills. My goal is to become into a GameDev.
+
+* 💬 Programing Languages: Python, JavaScrip, C# and a bit of PHP.
+* ⚡ Technologies and Libraries: ASP.NET Core, Flask, dJango, discord.py and Jquery. 
+* 📫 Other knowledges: HTML, CSS, WordPress, SQL, MySQL.
+* 🌱 I’m currently studing about web development
+
+[My portfolio](https://ka-konata.github.io)
 
 <!--
 **Ka-Konata/Ka-Konata** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
