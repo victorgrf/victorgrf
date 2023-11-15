@@ -1,11 +1,15 @@
 ```python
 print("Hello World!")
-```  
-<p>I'm a web developer student from Brazil. Currently studing to improve my knewledge and programming skills. My goal is to become into a GameDev.</p>
 
-> **Working at:** CREA-DF  
-> **Studying at:** UNIP  
-> **Learning:** PHP, Laravel
+"""
+Im a web developer student from Brazil. Currently studing to improve my knewledge and programming skills. 
+My goal is to become into a GameDev.
+
+Working at: CREA-DF  
+Studying at: UNIP  
+Learning: PHP, Laravel
+"""
+```  
 
 [My portfolio](https://ka-konata.github.io)
 
