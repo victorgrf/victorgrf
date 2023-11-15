@@ -1,4 +1,9 @@
-I'm a web developer student from Brazil. Currently studing to improve my knewledge and programming skills. My goal is to become into a GameDev.
+```python
+print("Hello World!")
+```
+
+> I'm a web developer student from Brazil. Currently studing to improve my knewledge and programming skills. My goal is to become into a GameDev.
+#### Working at: 
 
 * 💬 Programing Languages: Python, JavaScrip, C# and a bit of PHP.
 * ⚡ Frameworks and Libraries: ASP.NET Core, Flask, dJango, discord.py and Jquery. 
