@@ -1,10 +1,6 @@
 
 
-<p align="center"><a href="https://ka-konata.github.io">Portifolio</a></p>
-
-```python
-print("Working At: CREA-DF ● Studiyng At: Universidade Paulista ● Learning: PHP, Laravel")
-```
+<p align="center"><a href="https://ka-konata.github.io">Portfolio</a></p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/-Python-%23a5d6ff?style=flat-square&logo=python&logoColor=000000">
@@ -13,6 +9,11 @@ print("Working At: CREA-DF ● Studiyng At: Universidade Paulista ● Learning: 
   <img src="https://img.shields.io/badge/-PHP-%23a5d6ff?style=flat-square&logo=php&logoColor=000000">
   <img src="https://img.shields.io/badge/-JavaScript-%23a5d6ff?style=flat-square&logo=javascript&logoColor=000000">
 </p>
+
+
+```python
+"Working At: CREA-DF ● Studiyng At: Universidade Paulista ● Learning: PHP, Laravel"
+```
 
 <p align="center">
   <img src="https://img.shields.io/badge/-Django-%23a5d6ff?style=flat-square&logo=django&logoColor=000000">
