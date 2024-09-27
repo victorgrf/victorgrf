@@ -23,10 +23,3 @@
   <img src="https://img.shields.io/badge/-PostgreSQL-%23a5d6ff?style=flat-square&logo=postgresql&logoColor=000000">
   <img src="https://img.shields.io/badge/-Selenium-%23a5d6ff?style=flat-square&logo=selenium&logoColor=000000">
 </p>
-
----
-
-<p align="center">
-  <img align="center" src="https://github-readme-stats.vercel.app/api?username=victorgrf&show_icons=true&bg_color=a5d6ff&title_color=000&text_color=000&hide_border=true">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=victorgrf&layout=compact&bg_color=a5d6ff&title_color=000&text_color=000&hide_border=true">
-</p>
